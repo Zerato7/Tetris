@@ -1,0 +1,45 @@
+body {
+    background-color: black;
+}
+
+#kraj {
+    width: 60%;
+    margin: auto;
+}
+
+#leaderboard table {
+    margin: auto;
+    border-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+#leaderboard table tr td, #leaderboard table tr th {
+    background-color: aqua;
+    border-color: red;
+    text-align: center;
+}
+
+#leaderboard table tr td.header {
+    font-weight: bold;
+    text-align: left;
+}
+
+#trenutniRezultat table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+
+#trenutniRezultat table tr td, #trenutniRezultat table tr th {
+    background-color: aqua;
+}
+
+#linkovi {
+    margin: auto;
+    text-align: center;
+}
+
+a {
+    color: aqua;
+    text-decoration: none;
+}

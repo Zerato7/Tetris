@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris - Uputstvo</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="tetris-stil.css">
+    <script src="tetris-uputstvo.js"></script>
+</head>
+<bodys>
+    <div class="uputstvo">
+        <p>У игри „Тетрис“ у сваком тренутку пада један блок са врха простора за игру на који корисник може да утиче користећи тастере са циљем да их сложи на начин тако да између блокова остане што мање празног простора.</p>
+        <p>Контроле:</p>
+        <ul>
+            <li>
+                &#8592; Помера фигуру у лево
+            </li>
+            <li>
+                &#8594; Помера фигуру у десно
+            </li>
+            <li>
+                &#8593; Ротира фигуру у смеру казаљке на сату
+            </li>
+            <li>
+                &#8595; Помера фигуру на доле
+            </li>
+        </ul>
+        <p>Када се један цео ред попуни, цео тај ред нестаје и играч тиме остварује поене.</p>
+        <p>Како ток игре напредује, блокови падају све брже. Када се блокови нагомилају до врха поља за игру, без могућности да се нови блок појави, игра је готова.</p>
+        <p>Када блок падне на дно табле или на други блок, он се зауставља, а на врху табле се генерише нов блок.</p>
+    </div>
+    <div id="formPocetak">
+        Конфигурација:
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" id="I">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="J">
+                </td>
+                <td class="J"></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="L">
+                </td>
+                <td></td>
+                <td></td>
+                <td class="L"></td>
+                <td>
+                    <input type="checkbox" id="O">
+                </td>
+                <td class="O"></td>
+                <td class="O"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="I"></td>
+                <td class="I"></td>
+                <td class="I"></td>
+                <td class="I"></td>
+                <td></td>
+                <td class="J"></td>
+                <td class="J"></td>
+                <td class="J"></td>
+                <td></td>
+                <td class="L"></td>
+                <td class="L"></td>
+                <td class="L"></td>
+                <td></td>
+                <td class="O"></td>
+                <td class="O"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="S">
+                </td>
+                <td></td>
+                <td class="S"></td>
+                <td class="S"></td>
+                <td>
+                    <input type="checkbox" id="T">
+                </td>
+                <td></td>
+                <td class="T"></td>
+                <td></td>
+                <td>
+                    <input type="checkbox" id="Z">
+                </td>
+                <td class="Z"></td>
+                <td class="Z"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="S"></td>
+                <td class="S"></td>
+                <td></td>
+                <td></td>
+                <td class="T"></td>
+                <td class="T"></td>
+                <td class="T"></td>
+                <td></td>
+                <td></td>
+                <td class="Z"></td>
+                <td class="Z"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        Ниво:
+        <input type="radio" name="nivo" id="nivo0" value="Лаки" checked>
+        <label for="nivo0">Лаки</label>
+        <input type="radio" name="nivo" id="nivo1" value="Средњи">
+        <label for="nivo1">Средњи</label>
+        <input type="radio" name="nivo" id="nivo2" value="Тежак">
+        <label for="nivo2">Тежак</label><br>
+        <div class="flex">
+            <button id="zapocniIgru">Започни игру</button>
+            <a href="tetris-rezultati.html">Видети резултате</a>
+        </div>
+    </div>
+</body>
+</html>

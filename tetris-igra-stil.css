@@ -1,0 +1,69 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+#telo {
+    width: fit-content;
+    margin: auto;
+    background-color: darkgray;
+    display: flex;
+}
+
+#igra table {
+    height: 100vh;
+    width: 100%;
+    border-spacing: 1px;
+}
+
+#igra table tr {
+    width: 100%;
+}
+
+#igra table tr td {
+    padding: 0px;
+}
+
+#info {
+    text-align: center;
+}
+
+#info table {
+    margin: auto;
+}
+
+#info table tr td {
+    padding: 0px;
+}
+
+.B {
+    background-color: black;
+}
+
+.I {
+    background-color: aqua;
+}
+
+.J {
+    background-color: blue;
+}
+
+.L {
+    background-color: orange;
+}
+
+.O {
+    background-color: yellow;
+}
+
+.S {
+    background-color: green;
+}
+
+.T {
+    background-color: purple;
+}
+
+.Z {
+    background-color: red;
+}
